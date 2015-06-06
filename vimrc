@@ -1,9 +1,16 @@
 set nocompatible
-filetype off
+
+let g:airline_section_b = '%{strftime("%c")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#statusline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+set laststatus=2
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-"Plugin 'jeaye/color_coded/'
+Plugin 'bling/vim-airline'
 call vundle#end()
 filetype plugin indent on
 
