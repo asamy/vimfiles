@@ -47,6 +47,10 @@ syn keyword gasDirectiveX86	.att_syntax .intel_syntax .att_mnemonic .intel_mnemo
 
 " i*86 register set
 syn keyword gasRegisterX86	%rax %rbx %rcx %rdx %rdi %rsi %rsp %rbp
+syn keyword gasRegisterX86	%r8 %r9 %r10 %r11 %r12 %r13 %r14 %r15
+syn keyword gasRegisterX86	%r8d %r9d %r10d %r11d %r12d %r13d %r14d %r15d
+syn keyword gasRegisterX86	%r8w %r9w %r10w %r11w %r12w %r13w %r14w %r15w
+syn keyword gasRegisterX86	%r8b %r9b %r10b %r11b %r12b %r13b %r14b %r15b
 syn keyword gasRegisterX86	%eax %ebx %ecx %edx %ax %bx %cx %dx %ah %al %bh %bl %ch %cl %dh %dl
 syn keyword gasRegisterX86	%edi %esi %esp %ebp %di %si %sp %bp %sph %spl %bph %bpl
 syn keyword gasRegisterX86	%cs %ds %es %fs %gs %ss %ip %eip %rip %eflags
@@ -692,17 +696,17 @@ syn keyword gasOpcode_X64_SSE		movd
 syn keyword gasOpcode_X64_MMX		movq
 syn keyword gasOpcode_8086_Base		movsb
 syn keyword gasOpcode_386_Base		movsd
-syn keyword gasOpcode_X64_Base		movsq
+syn keyword gasOpcode_X64_Base		movsq movslq
 syn keyword gasOpcode_8086_Base		movsw
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movsxd
 syn keyword gasOpcode_X64_Base		movsx
-syn keyword gasOpcode_X64_Base		movzx
-syn keyword gasOpcode_X64_Base		mul
+syn keyword gasOpcode_X64_Base		movzx movzbl
+syn keyword gasOpcode_X64_Base		mul mull mulq
 syn keyword gasOpcode_PRESCOTT_Base	mwait
 syn keyword gasOpcode_X64_Base		neg
 syn keyword gasOpcode_X64_Base		nop
-syn keyword gasOpcode_X64_Base		not
+syn keyword gasOpcode_X64_Base		not notq
 syn keyword gasOpcode_386_Base		or orb orw orl orq
 syn keyword gasOpcode_386_Base		out
 syn keyword gasOpcode_186_Base		outsb
