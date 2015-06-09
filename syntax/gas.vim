@@ -695,7 +695,7 @@ syn keyword gasOpcode_386_Base		mov movb movw movl movq
 syn keyword gasOpcode_X64_SSE		movd
 syn keyword gasOpcode_X64_MMX		movq
 syn keyword gasOpcode_8086_Base		movsb
-syn keyword gasOpcode_386_Base		movsd
+syn keyword gasOpcode_386_Base		movsd movsbl
 syn keyword gasOpcode_X64_Base		movsq movslq
 syn keyword gasOpcode_8086_Base		movsw
 syn keyword gasOpcode_X64_Base		movsx

@@ -34,6 +34,7 @@ set smarttab
 set backspace=eol,start,indent
 
 au BufRead,BufNewFile *.S set filetype=gas
+au BufRead,BufNewFile *.s set filetype=gas
 
 nmap <C-J> vip=
 
