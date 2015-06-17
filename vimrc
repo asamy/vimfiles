@@ -11,6 +11,7 @@ set laststatus=2
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'bling/vim-airline'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
