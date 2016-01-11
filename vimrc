@@ -25,7 +25,8 @@ set textwidth=140
 
 " Color scheme
 set t_Co=256
-colorscheme Tomorrow-Night-Bright
+"colorscheme Tomorrow-Night-Bright
+colorscheme delek
 highlight folded ctermbg=238
 syntax enable
 
