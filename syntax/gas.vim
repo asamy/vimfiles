@@ -660,7 +660,7 @@ syn keyword gasOpcode_8086_Base		iretw
 syn keyword gasOpcode_8086_Base		jcxz jcxzb jcxzw jcxzl jcxzq
 syn keyword gasOpcode_386_Base		jecxz jecxzb jecxzw jecxzl jecxzq
 syn keyword gasOpcode_X64_Base		jrcxz jrcxzb jrcxzw jrcxzl jrcxzq
-syn keyword gasOpcode_X64_Base		jmp jmpb jmpw jmpl jmpq
+syn keyword gasOpcode_X64_Base		jmp jmpb jmpw jmpl jmpq ljmp ljmpb ljmpw ljmpl
 syn keyword gasOpcode_IA64_Base		jmpe
 syn keyword gasOpcode_8086_Base		lahf
 syn keyword gasOpcode_X64_Base		lar
