@@ -21,7 +21,15 @@ set ttymouse=xterm2
 set noexpandtab
 set tabstop=8
 set shiftwidth=8
-set textwidth=140
+set softtabstop=8
+set textwidth=120
+set cindent
+set cinoptions=:0,l1,t0,g0,(0
+set backspace=eol,start,indent
+
+syn keyword cOperator likely unlikely
+syn keyword cType u8 u16 u32 u64 s8 s16 s32 s64
+syn keyword cType __u8 __u16 __u32 __u64 __s8 __s16 __s32 __s64
 
 " Color scheme
 set t_Co=256
@@ -30,13 +38,10 @@ colorscheme delek
 highlight folded ctermbg=238
 syntax enable
 
-set autoindent
-set smartindent
-set smarttab
-set backspace=eol,start,indent
-
 au BufRead,BufNewFile *.S set filetype=gas
 au BufRead,BufNewFile *.s set filetype=gas
 
 nmap <C-J> vip=
+" reindent file
+map <F2> mzgg=G`z
 
