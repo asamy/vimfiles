@@ -1,5 +1,7 @@
 set nocompatible
 
+let g:airline_theme="bubblegum"
+let g:airline_powerline_fonts = 1
 let g:airline_section_b = '%{strftime("%c")}'
 let g:airline_section_y = 'BN: %{bufnr("%")}'
 let g:airline#extensions#statusline#enabled = 1
@@ -37,6 +39,7 @@ set t_Co=256
 "colorscheme Tomorrow-Night-Bright
 colorscheme delek
 highlight folded ctermbg=238
+highlight cOperator cterm=bold
 syntax enable
 
 au BufRead,BufNewFile *.S set filetype=gas
