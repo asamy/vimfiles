@@ -12,6 +12,7 @@ syn keyword cOperator __builtin_popcount __builtin_parity __builtin_ffsl __built
 syn keyword cOperator __builtin_popcountl __builtin_parityl __builtin_ffsll __builtin_clzll __builtin_ctzll
 syn keyword cOperator __builtin_popcountll __builtin_parityll __builtin_powi __builtin_powif __builtin_powil
 syn keyword cOperator __builtin_bswap32 __builtin_bswap64
+syn keyword cOperator __restrict __restrict__ restrict
 syn keyword cType __m64 __m128 __m256 __m512 __m128i __m128d __m256i __m256d __m512i __m512d
 syn keyword cType u8 u16 u32 u64 s8 s16 s32 s64
 syn keyword cType __u8 __u16 __u32 __u64 __s8 __s16 __s32 __s64
