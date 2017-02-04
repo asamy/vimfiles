@@ -35,11 +35,13 @@ set nolist
 set cindent
 set cinoptions=:0,l1,t0,g0,(0
 set backspace=eol,start,indent
+set hlsearch
 
 " Color scheme
 set t_Co=256
 "colorscheme Tomorrow-Night-Bright
-colorscheme delek
+"colorscheme delek
+colorscheme molokai
 highlight folded ctermbg=238
 highlight cOperator cterm=bold
 syntax enable
