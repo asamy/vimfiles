@@ -52,7 +52,7 @@ syn keyword gasRegisterX86	%r8d %r9d %r10d %r11d %r12d %r13d %r14d %r15d
 syn keyword gasRegisterX86	%r8w %r9w %r10w %r11w %r12w %r13w %r14w %r15w
 syn keyword gasRegisterX86	%r8b %r9b %r10b %r11b %r12b %r13b %r14b %r15b
 syn keyword gasRegisterX86	%eax %ebx %ecx %edx %ax %bx %cx %dx %ah %al %bh %bl %ch %cl %dh %dl
-syn keyword gasRegisterX86	%edi %esi %esp %ebp %di %si %sp %bp %sph %spl %bph %bpl
+syn keyword gasRegisterX86	%edi %esi %esp %ebp %di %si %sp %bp %sph %spl %bph %bpl %dil %sil
 syn keyword gasRegisterX86	%cs %ds %es %fs %gs %ss %ip %eip %rip %eflags
 syn match   gasRegisterX86	/\<%r\([8-9]\|1[0-5]\)[lwd]\?\>/
 
@@ -701,7 +701,7 @@ syn keyword gasOpcode_8086_Base		movsw movswq
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movsxd
 syn keyword gasOpcode_X64_Base		movsx
-syn keyword gasOpcode_X64_Base		movzx movzbl movzwl movzwq
+syn keyword gasOpcode_X64_Base		movzx movzbw movzbl movzwl movzwq
 syn keyword gasOpcode_X64_Base		mul mull mulq
 syn keyword gasOpcode_PRESCOTT_Base	mwait
 syn keyword gasOpcode_X64_Base		neg negb negw negl negq
