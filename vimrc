@@ -12,7 +12,8 @@ set laststatus=2
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rust-lang/rust.vim'
 Plugin 'fatih/vim-go'
 call vundle#end()
@@ -48,6 +49,10 @@ syntax enable
 
 au BufRead,BufNewFile *.S set filetype=gas
 au BufRead,BufNewFile *.s set filetype=gas
+au BufReadPost *
+	\ if line("'\"") > 1 && line("'\"") <= line("$") |
+	\	exe "normal! g`\"" |
+	\ endif
 
 nmap <C-J> vip=
 " reindent file

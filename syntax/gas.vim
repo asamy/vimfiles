@@ -37,7 +37,7 @@ syn keyword gasDirective	.space .stabd .stabn .stabs .struct .subsection
 syn keyword gasDirective	.symver .tag .text .title .type .uleb128 .val .version
 syn keyword gasDirective	.vtable_entry .vtable_inherit .warning .weak .weakref
 
-syn keyword gasDirectiveStore	.byte .hword .word .int .long .double .short .float
+syn keyword gasDirectiveStore	.byte .hword .word .int .long .double .short
 syn keyword gasDirectiveStore	.string .string8 .string16 .ascii .asciz .comm
 
 syn keyword gasDirectiveMacro	.altmacro .macro .noaltmacro .endm .func .endfunc
@@ -528,7 +528,7 @@ syn keyword gasOpcode_8086_Base		cwd
 syn keyword gasOpcode_386_Base		cwde
 syn keyword gasOpcode_8086_Base		daa
 syn keyword gasOpcode_8086_Base		das
-syn keyword gasOpcode_X64_Base		dec
+syn keyword gasOpcode_X64_Base		dec decb decl decq
 syn keyword gasOpcode_X64_Base		div
 syn keyword gasOpcode_P6_Base		dmint
 syn keyword gasOpcode_PENT_MMX		emms
@@ -694,19 +694,19 @@ syn keyword gasOpcode_PRESCOTT_Base	monitor
 syn keyword gasOpcode_386_Base		mov movb movw movl movq
 syn keyword gasOpcode_X64_SSE		movd
 syn keyword gasOpcode_X64_MMX		movq
-syn keyword gasOpcode_8086_Base		movsb
-syn keyword gasOpcode_386_Base		movsd movsbl
+syn keyword gasOpcode_8086_Base		movsb movsbw movsbl
+syn keyword gasOpcode_386_Base		movsd
 syn keyword gasOpcode_X64_Base		movsq movslq
 syn keyword gasOpcode_8086_Base		movsw
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movsxd
 syn keyword gasOpcode_X64_Base		movsx
-syn keyword gasOpcode_X64_Base		movzx movzbl
+syn keyword gasOpcode_X64_Base		movzx movzbl movzwl movzwq
 syn keyword gasOpcode_X64_Base		mul mull mulq
 syn keyword gasOpcode_PRESCOTT_Base	mwait
-syn keyword gasOpcode_X64_Base		neg
+syn keyword gasOpcode_X64_Base		neg negb negw neg negq
 syn keyword gasOpcode_X64_Base		nop
-syn keyword gasOpcode_X64_Base		not notq
+syn keyword gasOpcode_X64_Base		not notb notw notl notq
 syn keyword gasOpcode_386_Base		or orb orw orl orq
 syn keyword gasOpcode_386_Base		out
 syn keyword gasOpcode_186_Base		outsb
@@ -876,13 +876,13 @@ syn keyword gasOpcode_8086_Base		fwait
 syn keyword gasOpcode_486_Base		wbinvd
 syn keyword gasOpcode_P6_Base		wrshr
 syn keyword gasOpcode_PENT_Base		wrmsr
-syn keyword gasOpcode_X64_Base		xadd
+syn keyword gasOpcode_X64_Base		xadd xaddb xaddw xaddl xaddq
 syn keyword gasOpcode_386_Base		xbts
 syn keyword gasOpcode_X64_Base		xchg
 syn keyword gasOpcode_8086_Base		xlatb
 syn keyword gasOpcode_8086_Base		xlat
 syn keyword gasOpcode_386_Base		xor xorb xorw xorl xorq
-syn keyword gasOpcode_X64_Base		cmovcc
+syn keyword gasOpcode_X64_Base		cmovpl cmovcc
 syn match   gasOpcode_8086_Base		/\<j\(e\|ne\|a\|ae\|b\|be\|nbe\|g\|ge\|ng\|nge\|l\|le\|\|z\|nz\|c\|nc\|d\|nd\|o\|no\|p\|np\|s\|ns\)[bwlq]\?\>/
 syn match   gasOpcode_386_Base		/\<set\(e\|ne\|a\|ae\|b\|be\|nbe\|g\|ge\|ng\|nge\|l\|le\|\|z\|nz\|c\|nc\|d\|nd\|o\|no\|p\|np\|s\|ns\)[bwlq]\?\>/
 
