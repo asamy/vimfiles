@@ -37,7 +37,7 @@ syn keyword gasDirective	.space .stabd .stabn .stabs .struct .subsection
 syn keyword gasDirective	.symver .tag .text .title .type .uleb128 .val .version
 syn keyword gasDirective	.vtable_entry .vtable_inherit .warning .weak .weakref
 
-syn keyword gasDirectiveStore	.byte .hword .word .int .long .double .short
+syn keyword gasDirectiveStore	.byte .hword .word .int .long .double .float .short
 syn keyword gasDirectiveStore	.string .string8 .string16 .ascii .asciz .comm
 
 syn keyword gasDirectiveMacro	.altmacro .macro .noaltmacro .endm .func .endfunc
@@ -496,7 +496,7 @@ syn keyword gasOpcode_PENT_Base		bb1_reset
 syn keyword gasOpcode_386_Base		bound boundb boundw boundl boundq
 syn keyword gasOpcode_X64_Base		bsf
 syn keyword gasOpcode_X64_Base		bsr
-syn keyword gasOpcode_X64_Base		bswap
+syn keyword gasOpcode_X64_Base		bswap bswapb bswapw bswapl bswapq
 syn keyword gasOpcode_X64_Base		bt btb btw btl btq
 syn keyword gasOpcode_X64_Base		btc btcb btcw btcl btcq
 syn keyword gasOpcode_X64_Base		btr btrb btrw btrl btrq
@@ -697,14 +697,14 @@ syn keyword gasOpcode_X64_MMX		movq
 syn keyword gasOpcode_8086_Base		movsb movsbw movsbl
 syn keyword gasOpcode_386_Base		movsd
 syn keyword gasOpcode_X64_Base		movsq movslq
-syn keyword gasOpcode_8086_Base		movsw
+syn keyword gasOpcode_8086_Base		movsw movswq
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movsxd
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movzx movzbl movzwl movzwq
 syn keyword gasOpcode_X64_Base		mul mull mulq
 syn keyword gasOpcode_PRESCOTT_Base	mwait
-syn keyword gasOpcode_X64_Base		neg negb negw neg negq
+syn keyword gasOpcode_X64_Base		neg negb negw negl negq
 syn keyword gasOpcode_X64_Base		nop
 syn keyword gasOpcode_X64_Base		not notb notw notl notq
 syn keyword gasOpcode_386_Base		or orb orw orl orq
