@@ -494,7 +494,7 @@ syn keyword gasOpcode_286_Base		arpl
 syn keyword gasOpcode_PENT_Base		bb0_reset
 syn keyword gasOpcode_PENT_Base		bb1_reset
 syn keyword gasOpcode_386_Base		bound boundb boundw boundl boundq
-syn keyword gasOpcode_X64_Base		bsf
+syn keyword gasOpcode_X64_Base		bsf bsfb bsfw bsfl bsfq
 syn keyword gasOpcode_X64_Base		bsr bsrb bsrw bsrl bsrq
 syn keyword gasOpcode_X64_Base		bswap bswapb bswapw bswapl bswapq
 syn keyword gasOpcode_X64_Base		bt btb btw btl btq
@@ -697,9 +697,10 @@ syn keyword gasOpcode_X64_MMX		movq
 syn keyword gasOpcode_8086_Base		movsb movsbw movsbl
 syn keyword gasOpcode_386_Base		movsd
 syn keyword gasOpcode_X64_Base		movsq movslq
-syn keyword gasOpcode_8086_Base		movsw movswq
+syn keyword gasOpcode_8086_Base		movsw movswl movswq
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movsxd
+syn keyword gasOpcode_X86_Base		movabs movabsw movabsl movabsq
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movzx movzbw movzbl movzbq movzwl movzwq
 syn keyword gasOpcode_X64_Base		mul mull mulq
@@ -835,7 +836,7 @@ syn keyword gasOpcode_8086_Base		scasw
 syn keyword gasOpcode_X64_Base		sfence
 syn keyword gasOpcode_286_Base		sgdt sgdtb sgdtw sgdtl sgdtq
 syn keyword gasOpcode_X64_Base		shl shlb shlw shll shlq
-syn keyword gasOpcode_X64_Base		shld
+syn keyword gasOpcode_X64_Base		shld shldb shldw shldl shdlq
 syn keyword gasOpcode_X64_Base		shr shrb shrw shrl shrq
 syn keyword gasOpcode_X64_Base		shrd shrdb shrdw shrdl shrdq
 syn keyword gasOpcode_286_Base		sidt sidtb sidtw sidtl sidtq
@@ -878,11 +879,12 @@ syn keyword gasOpcode_P6_Base		wrshr
 syn keyword gasOpcode_PENT_Base		wrmsr
 syn keyword gasOpcode_X64_Base		xadd xaddb xaddw xaddl xaddq
 syn keyword gasOpcode_386_Base		xbts
-syn keyword gasOpcode_X64_Base		xchg
+syn keyword gasOpcode_X64_Base		xchg xchgb xchgw xchgl xchgq
 syn keyword gasOpcode_8086_Base		xlatb
 syn keyword gasOpcode_8086_Base		xlat
 syn keyword gasOpcode_386_Base		xor xorb xorw xorl xorq
-syn keyword gasOpcode_X64_Base		cmovpl cmovcc
+syn keyword gasOpcode_X64_Base		cmovpl cmovcc cmovgew cmovgel cmovgeq
+syn keyword gasOpcode_8086_Base		cbtw cwtl cwtd cltd
 syn match   gasOpcode_8086_Base		/\<j\(e\|ne\|a\|ae\|b\|be\|nbe\|g\|ge\|ng\|nge\|l\|le\|\|z\|nz\|c\|nc\|d\|nd\|o\|no\|p\|np\|s\|ns\)[bwlq]\?\>/
 syn match   gasOpcode_386_Base		/\<set\(e\|ne\|a\|ae\|b\|be\|nbe\|g\|ge\|ng\|nge\|l\|le\|\|z\|nz\|c\|nc\|d\|nd\|o\|no\|p\|np\|s\|ns\)[bwlq]\?\>/
 
