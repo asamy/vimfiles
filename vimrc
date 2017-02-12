@@ -29,7 +29,7 @@ set noexpandtab
 set tabstop=8
 set shiftwidth=8
 set softtabstop=8
-set textwidth=79
+set textwidth=120
 set wrap
 set linebreak
 set nolist
@@ -47,6 +47,7 @@ highlight folded ctermbg=238
 highlight cOperator cterm=bold
 syntax enable
 
+au BufEnter /usr/include/c++/* set filetype=cpp
 au BufRead,BufNewFile *.S set filetype=gas
 au BufRead,BufNewFile *.s set filetype=gas
 au BufReadPost *
@@ -57,4 +58,7 @@ au BufReadPost *
 nmap <C-J> vip=
 " reindent file
 map <F2> mzgg=G`z
+
+"clear highlight
+nnoremap <C-L> :nohlsearch<cr>
 

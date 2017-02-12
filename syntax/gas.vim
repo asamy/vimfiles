@@ -883,7 +883,7 @@ syn keyword gasOpcode_X64_Base		xchg xchgb xchgw xchgl xchgq
 syn keyword gasOpcode_8086_Base		xlatb
 syn keyword gasOpcode_8086_Base		xlat
 syn keyword gasOpcode_386_Base		xor xorb xorw xorl xorq
-syn keyword gasOpcode_X64_Base		cmovpl cmovcc cmovgew cmovgel cmovgeq
+syn keyword gasOpcode_X64_Base		cmove cmovpl cmovcc cmovgew cmovgel cmovgeq
 syn keyword gasOpcode_8086_Base		cbtw cwtl cwtd cltd
 syn match   gasOpcode_8086_Base		/\<j\(e\|ne\|a\|ae\|b\|be\|nbe\|g\|ge\|ng\|nge\|l\|le\|\|z\|nz\|c\|nc\|d\|nd\|o\|no\|p\|np\|s\|ns\)[bwlq]\?\>/
 syn match   gasOpcode_386_Base		/\<set\(e\|ne\|a\|ae\|b\|be\|nbe\|g\|ge\|ng\|nge\|l\|le\|\|z\|nz\|c\|nc\|d\|nd\|o\|no\|p\|np\|s\|ns\)[bwlq]\?\>/
