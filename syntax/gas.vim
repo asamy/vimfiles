@@ -700,7 +700,7 @@ syn keyword gasOpcode_X64_Base		movsq movslq
 syn keyword gasOpcode_8086_Base		movsw movswl movswq
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movsxd
-syn keyword gasOpcode_X86_Base		movabs movabsw movabsl movabsq
+syn keyword gasOpcode_X64_Base		movabs movabsw movabsl movabsq
 syn keyword gasOpcode_X64_Base		movsx
 syn keyword gasOpcode_X64_Base		movzx movzbw movzbl movzbq movzwl movzwq
 syn keyword gasOpcode_X64_Base		mul mull mulq

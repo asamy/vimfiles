@@ -16,6 +16,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rust-lang/rust.vim'
 Plugin 'fatih/vim-go'
+Plugin 'editorconfig/editorconfig-vim'
 call vundle#end()
 filetype plugin indent on
 
@@ -29,7 +30,7 @@ set noexpandtab
 set tabstop=8
 set shiftwidth=8
 set softtabstop=8
-set textwidth=120
+set textwidth=90
 set wrap
 set linebreak
 set nolist
