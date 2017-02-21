@@ -528,7 +528,7 @@ syn keyword gasOpcode_8086_Base		cwd
 syn keyword gasOpcode_386_Base		cwde
 syn keyword gasOpcode_8086_Base		daa
 syn keyword gasOpcode_8086_Base		das
-syn keyword gasOpcode_X64_Base		dec decb decl decq
+syn keyword gasOpcode_X64_Base		dec decb decw decl decq
 syn keyword gasOpcode_X64_Base		div
 syn keyword gasOpcode_P6_Base		dmint
 syn keyword gasOpcode_PENT_MMX		emms
@@ -836,7 +836,7 @@ syn keyword gasOpcode_8086_Base		scasw
 syn keyword gasOpcode_X64_Base		sfence
 syn keyword gasOpcode_286_Base		sgdt sgdtb sgdtw sgdtl sgdtq
 syn keyword gasOpcode_X64_Base		shl shlb shlw shll shlq
-syn keyword gasOpcode_X64_Base		shld shldb shldw shldl shdlq
+syn keyword gasOpcode_X64_Base		shld shldb shldw shldl shldq
 syn keyword gasOpcode_X64_Base		shr shrb shrw shrl shrq
 syn keyword gasOpcode_X64_Base		shrd shrdb shrdw shrdl shrdq
 syn keyword gasOpcode_286_Base		sidt sidtb sidtw sidtl sidtq

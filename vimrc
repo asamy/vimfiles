@@ -41,6 +41,7 @@ set hlsearch
 
 " Color scheme
 set t_Co=256
+set background=dark
 "colorscheme Tomorrow-Night-Bright
 "colorscheme delek
 colorscheme molokai
@@ -51,10 +52,12 @@ syntax enable
 au BufEnter /usr/include/c++/* set filetype=cpp
 au BufRead,BufNewFile *.S set filetype=gas
 au BufRead,BufNewFile *.s set filetype=gas
+au BufRead,BufNewFile *.asm set filetype=masm
 au BufReadPost *
 	\ if line("'\"") > 1 && line("'\"") <= line("$") |
 	\	exe "normal! g`\"" |
 	\ endif
+au BufWritePost .vimrc source ~/.vimrc
 
 nmap <C-J> vip=
 " reindent file
