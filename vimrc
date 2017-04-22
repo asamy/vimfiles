@@ -55,9 +55,9 @@ au BufRead,BufNewFile *.s set filetype=gas
 au BufRead,BufNewFile *.asm set filetype=masm
 au BufRead,BufNewFile *.sp set filetype=sourcepawn
 au BufReadPost *
-	\ if line("'\"") > 1 && line("'\"") <= line("$") |
-	\	exe "normal! g`\"" |
-	\ endif
+			\ if line("'\"") > 1 && line("'\"") <= line("$") |
+			\	exe "normal! g`\"" |
+			\ endif
 au BufWritePost .vimrc source ~/.vimrc
 
 nmap <C-J> vip=
@@ -66,4 +66,10 @@ map <F2> mzgg=G`z
 
 "clear highlight
 nnoremap <C-L> :nohlsearch<cr>
+"switch to hex mode
+noremap <C-A> :%!xxd<cr>
+noremap <C-F> :%!xxd -r<cr>
+
+"subsitute windows style for unix.
+noremap <C-W> :%s/\r$//g
 
