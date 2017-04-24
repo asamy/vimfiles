@@ -54,6 +54,7 @@ au BufRead,BufNewFile *.S set filetype=gas
 au BufRead,BufNewFile *.s set filetype=gas
 au BufRead,BufNewFile *.asm set filetype=masm
 au BufRead,BufNewFile *.sp set filetype=sourcepawn
+au BufRead,BufNewFile *.html set textwidth=160
 au BufReadPost *
 			\ if line("'\"") > 1 && line("'\"") <= line("$") |
 			\	exe "normal! g`\"" |
