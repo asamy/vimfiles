@@ -23,20 +23,35 @@ filetype plugin indent on
 " go fmt
 let g:go_fmt_command = "goimports"
 
-set number
 set mouse=a
 set ttymouse=xterm2
+
+set visualbell
+set noerrorbells
+
+set number
+set title
+set ruler
+set cursorline
+
 set noexpandtab
 set tabstop=8
 set shiftwidth=8
 set softtabstop=8
 set textwidth=90
+
+set ignorecase
+set smartcase
+
 set wrap
 set linebreak
 set nolist
+set copyindent
 set cindent
 set cinoptions=:0,l1,t0,g0,(0
 set backspace=eol,start,indent
+
+set incsearch
 set hlsearch
 
 " Color scheme
