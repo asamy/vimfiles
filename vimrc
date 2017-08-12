@@ -60,6 +60,7 @@ au BufReadPost *
 			\	exe "normal! g`\"" |
 			\ endif
 au BufWritePost .vimrc source ~/.vimrc
+au BufWritePre *.py normal m`:%s/\s\+$//e ``
 
 nmap <C-J> vip=
 " reindent file
